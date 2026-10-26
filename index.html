@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FocusBank: screen time you earn</title>
+<meta name="description" content="FocusBank is a free Android app that locks distracting apps until you earn time by finishing your tasks. Offline, no account, no tracking.">
+<meta property="og:title" content="FocusBank: screen time you earn">
+<meta property="og:description" content="Distracting apps stay locked until you earn minutes by finishing tasks on time. Free for Android 8+.">
+<meta name="theme-color" content="#3f6418">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@600;700&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/icon.svg" alt="" width="34" height="34">FocusBank</a>
+    <nav class="nav" aria-label="Main">
+      <a class="hide-sm" href="#how">How it works</a>
+      <a class="hide-sm" href="#features">Features</a>
+      <a class="hide-sm" href="#privacy">Privacy</a>
+      <a class="btn btn-primary" href="#download">Download</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <p class="eyebrow">Free Android app · v1.7.0</p>
+        <h1>Screen time you <em>earn</em>.</h1>
+        <p class="lead">FocusBank keeps your distracting apps locked until you've done the work. Finish tasks on time to fill your Vault with minutes, then spend them on the apps you choose. Miss a deadline and one of those apps gets locked.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#download">Download for Android <small>APK</small></a>
+          <a class="btn btn-ghost" href="#how">See how it works</a>
+        </div>
+        <div class="facts"><span>Works offline</span><span>No account</span><span>No ads or tracking</span><span>Android 8 and later</span></div>
+      </div>
+
+      <div class="phone" aria-label="Example of the FocusBank Vault screen">
+        <div class="screen">
+          <div class="screen-top"><span>Vault</span><span>EXAMPLE</span></div>
+          <div class="vault">
+            <span class="vault-label">AVAILABLE NOW</span>
+            <span class="vault-time" id="vault-time">00:42:17</span>
+            <span class="vault-note">Counting down while Instagram is open</span>
+          </div>
+          <div class="chip-row"><span class="chip live">Instagram · open</span><span class="chip">YouTube</span><span class="chip">Games</span></div>
+          <div class="mini-card"><b>Finish lab report</b><span>HIGH · +30 min · due today 6:00 PM</span></div>
+          <div class="mini-card penalty"><b>Penalty: YouTube locked</b><span>00:18:40 left · counts down while your Vault has time</span></div>
+          <div class="mini-card"><b>Screen-free time</b><span>48 of 90 min away from the screen today</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="how">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">How it works</p>
+        <h2>Work first. Then play, on a budget.</h2>
+        <p class="lead">Most screen-time limits are free minutes you can dismiss. FocusBank turns them into something you earn, so finishing your work is what opens your apps.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><h3>Add a commitment</h3><p>Give it a deadline, a priority and a reward. High-priority tasks earn 30 minutes by default, medium 20, low 10. You can also set a penalty for missing it.</p></div>
+        <div class="step"><h3>Finish it on time</h3><p>The reward goes into your Vault. Finish a full day early and you also earn a reroll, which cancels your next penalty.</p></div>
+        <div class="step"><h3>Spend your minutes</h3><p>Opening a protected app counts down your Vault second by second. When it reaches zero, the app is blocked until you earn more.</p></div>
+      </div>
+      <div class="penalty-note">
+        <p><strong>Missed a deadline?</strong> FocusBank rolls the dice and locks one of your protected apps for the task's penalty time. The lock counts down while your Vault has time and pauses when it's empty. If the task is still unfinished when it ends, another app gets locked.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="rules">
+        <div class="rule"><span class="num">30</span><p>free minutes every day, plus an optional extra 30 at a time you choose</p></div>
+        <div class="rule"><span class="num">1:1</span><p>one second of a protected app costs one second of Vault time</p></div>
+        <div class="rule"><span class="num">24 h</span><p>early finish earns a penalty reroll</p></div>
+        <div class="rule"><span class="num">0 s</span><p>in the Vault means protected apps stay locked</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="features">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Features</p>
+        <h2>Built to be hard to cheat, easy to live with.</h2>
+      </div>
+      <div class="features">
+        <div class="feature"><span class="tag">Tasks</span><h3>Commitments and plans</h3><p>Commitments earn rewards and carry penalties. Plans are for scheduling only: a reminder, no reward, and they never keep your apps locked.</p></div>
+        <div class="feature"><span class="tag">Limits</span><h3>Daily time limit per app</h3><p>Cap any protected app, say 30 minutes of Instagram a day. It still uses Vault time and is blocked when either the limit or the Vault runs out.</p></div>
+        <div class="feature"><span class="tag">Unlock</span><h3>Finish everything, use freely</h3><p>Complete every commitment due today and your apps open for the rest of the day, even with an empty Vault. Your per-app limits still apply.</p></div>
+        <div class="feature"><span class="tag">Wellbeing</span><h3>Screen-free goal</h3><p>Set minutes you want away from your phone each day. The daily unlock waits until you've reached them. Sleep doesn't count.</p></div>
+        <div class="feature"><span class="tag">Planning</span><h3>Week at a glance</h3><p>Seven days in three-hour windows, colour-coded by priority. Sort tasks by due date, priority or the Eisenhower matrix.</p></div>
+        <div class="feature"><span class="tag">Blocking</span><h3>A block screen that helps</h3><p>When an app is locked, FocusBank says why, shows the countdown, and points you to the most important task you could finish next.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section band" id="privacy">
+    <div class="wrap privacy">
+      <div class="section-head" style="margin:0">
+        <p class="eyebrow">Privacy</p>
+        <h2>Your data never leaves your phone.</h2>
+        <p class="lead">FocusBank has no server and no account. It doesn't even request internet access.</p>
+        <p><a href="privacy.html">Read the privacy policy</a></p>
+      </div>
+      <ul class="checks">
+        <li><div><b>Only what blocking needs</b><br><span>The Accessibility service sees which app is on screen and whether the screen is on. It doesn't read what you type or what other apps show.</span></div></li>
+        <li><div><b>You decide first</b><br><span>An in-app explanation asks for your consent before you enable anything, and you can turn it off any time in Settings.</span></div></li>
+        <li><div><b>Kept out of cloud backup</b><br><span>Your tasks and usage stay on the device. Export a backup file yourself if you want one.</span></div></li>
+        <li><div><b>No ads, analytics or trackers</b><br><span>Nothing is collected, sold or shared.</span></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="download">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Download</p>
+        <h2>Get FocusBank for Android.</h2>
+        <p class="lead">FocusBank isn't on Google Play yet, so you install it directly. It takes about two minutes.</p>
+      </div>
+      <div class="download">
+        <div class="dl-card">
+          <h3>FocusBank 1.7.0</h3>
+          <a class="btn" href="https://github.com/Dasa108/focusbank/releases/latest/download/FocusBank.apk">Download APK</a>
+          <dl class="meta">
+            <dt>Size</dt><dd>8.6 MB</dd>
+            <dt>Requires</dt><dd>Android 8.0 or later</dd>
+            <dt>Released</dt><dd>27 October 2026</dd>
+            <dt>SHA-256</dt><dd>d856214756ffd6d40653b80c80268d6d2974415df7cd17dc8f50639f0611fc07</dd>
+          </dl>
+        </div>
+        <div>
+          <ol class="install">
+            <li><div><b>Download the APK</b><span>Tap the button. Your browser may warn that this type of file can be harmful; choose Download anyway.</span></div></li>
+            <li><div><b>Allow the install</b><span>Open the file. Android asks you to allow installs from your browser or file manager the first time. If Play Protect says the developer is unrecognised, tap More details, then Install anyway.</span></div></li>
+            <li><div><b>Open FocusBank and choose your apps</b><span>On the Apps tab, switch on protection for the apps you want to limit.</span></div></li>
+            <li><div><b>Turn on blocking</b><span>Tap Enable blocking, read the explanation, agree, then switch on FocusBank in Accessibility settings.</span></div></li>
+            <li><div><b>If the switch is greyed out</b><span>On Android 13 and later, apps installed outside Google Play need one extra step: open Settings › Apps › FocusBank, tap the ⋮ menu, choose Allow restricted settings, then go back and switch it on.</span></div></li>
+          </ol>
+          <p class="callout"><strong>Paying with UPI?</strong> Some UPI and banking apps refuse payments while any Accessibility service is on. Turn FocusBank off in Settings › Accessibility while you pay, then turn it back on from the app.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section band" id="faq">
+    <div class="wrap">
+      <div class="section-head"><p class="eyebrow">Questions</p><h2>Good to know</h2></div>
+      <div class="faq">
+        <details><summary>Is FocusBank free?</summary><p>Yes. There are no ads, subscriptions or in-app purchases.</p></details>
+        <details><summary>Why does it need Accessibility permission?</summary><p>It's the only way an Android app can tell, the moment you switch apps, that a protected app has opened, and then show the block screen. FocusBank only uses the app's package name and whether the screen is on.</p></details>
+        <details><summary>Can't I just turn it off?</summary><p>Yes, in Settings, and that's deliberate. FocusBank is a self-control tool for your own phone, not parental control. It makes turning it off a conscious choice rather than a single tap inside the app.</p></details>
+        <details><summary>Will it drain my battery?</summary><p>It reacts to app switches and runs one light check per second while it's on. It needs no network and does no background syncing.</p></details>
+        <details><summary>Will it come to Google Play?</summary><p>That's the plan. When it does, it will be a separate install: back up your data from the Vault screen first, then install the Play version.</p></details>
+        <details><summary>Something isn't working</summary><p>Some phone makers stop background services to save battery. If blocking stops, check that FocusBank is still on in Accessibility settings and allowed to run in the background. You can report problems on <a href="https://github.com/Dasa108/focusbank/issues">GitHub</a>.</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 FocusBank · Made in India</span>
+    <nav aria-label="Footer"><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms</a><a href="https://github.com/Dasa108/focusbank/issues">Report a problem</a></nav>
+  </div>
+</footer>
+
+<script>
+  // Example Vault countdown in the hero; stays still for people who prefer reduced motion.
+  (function () {
+    const el = document.getElementById('vault-time');
+    if (!el || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    let s = 42 * 60 + 17;
+    const fmt = n => String(n).padStart(2, '0');
+    setInterval(() => {
+      s = s > 40 * 60 ? s - 1 : 42 * 60 + 17;
+      el.textContent = `${fmt(Math.floor(s / 3600))}:${fmt(Math.floor(s % 3600 / 60))}:${fmt(s % 60)}`;
+    }, 1000);
+  })();
+</script>
+</body>
+</html>
