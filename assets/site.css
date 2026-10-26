@@ -61,6 +61,7 @@ p { margin: 0; }
 .nav { display: flex; align-items: center; gap: 22px; font-weight: 600; font-size: 0.95rem; }
 .nav a { color: var(--muted); text-decoration: none; }
 .nav a:hover { color: var(--ink); }
+.nav a.btn-primary, .nav a.btn-primary:hover { color: var(--brand-ink); }
 @media (max-width: 760px) { .nav .hide-sm { display: none; } }
 
 /* Buttons */
