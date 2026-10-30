@@ -154,6 +154,24 @@
     </div>
   </section>
 
+  <section class="section" id="built">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Under the hood</p>
+        <h2>How it's built, and why.</h2>
+        <p class="lead">FocusBank is a native Android app written by one developer. Every tool was picked to keep it offline, fast to react and simple to maintain.</p>
+      </div>
+      <div class="features">
+        <div class="feature"><span class="tag">Kotlin + Compose</span><h3>Native, not cross-platform</h3><p>Blocking apps is only possible on Android, and the core (Accessibility, alarms, the block screen) has to be native Kotlin anyway. Jetpack Compose redraws the countdown every second with far less code than XML layouts.</p></div>
+        <div class="feature"><span class="tag">Accessibility</span><h3>Reacts the moment an app opens</h3><p>Chosen over usage statistics, which report only after the fact and can't block. A VPN would block only network traffic, and device-owner mode needs a factory reset.</p></div>
+        <div class="feature"><span class="tag">Room + preferences</span><h3>All data stays on the phone</h3><p>Room (SQLite) keeps tasks and daily usage, with checked queries and safe upgrades. The balance, which changes every second, lives in fast built-in preferences. A cloud database was never an option: the app has no internet permission.</p></div>
+        <div class="feature"><span class="tag">AlarmManager</span><h3>Deadlines that fire on time</h3><p>Deadlines belong to a clock time, so they use alarms that still run in battery-saving Doze mode. Background-job schedulers were ruled out because they decide for themselves when to run.</p></div>
+        <div class="feature"><span class="tag">89 tests</span><h3>Tested without a phone</h3><p>The rules and the blocking engine run under JUnit and Robolectric on a laptop in seconds, using a fake phone with a scripted clock. Phone-maker quirks are checked on a real device.</p></div>
+        <div class="feature"><span class="tag">GitHub</span><h3>Free, signed and versioned</h3><p>Every release is signed with the same key, so updates install over the old version and keep your data. GitHub Releases hosts each version with its checksum, and this site is plain HTML on GitHub Pages, with no trackers.</p></div>
+      </div>
+    </div>
+  </section>
+
   <section class="section band" id="faq">
     <div class="wrap">
       <div class="section-head"><p class="eyebrow">Questions</p><h2>Good to know</h2></div>
